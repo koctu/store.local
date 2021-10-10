@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="{{URL::asset('css/fonts.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/slick.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/ion.rangeSlider.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/jquery.formstyler.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/jquery.formstyler.theme.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/jquery.rateyo.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/media.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/fonts.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/slick.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/ion.rangeSlider.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/jquery.formstyler.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/jquery.formstyler.theme.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/jquery.rateyo.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/style.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/media.css')}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -166,16 +166,16 @@
         <div class="container">
             <ul class="menu-categories">
                 <li class="menu-categories__item">
-                    <a class="menu-categories__link" href="/catalog=3">Мягкие игрушки</a>
+                    <a class="menu-categories__link" href="/catalog=2">Мягкие игрушки</a>
                 </li>
                 <li class="menu-categories__item">
-                    <a class="menu-categories__link" href="/catalog=5">Интерактивные игрушки</a>
+                    <a class="menu-categories__link" href="/catalog=4">Интерактивные игрушки</a>
                 </li>
                 <li class="menu-categories__item">
-                    <a class="menu-categories__link" href="/catalog=2">Игрушки по размеру</a>
+                    <a class="menu-categories__link" href="/catalog=3">Игрушки по размеру</a>
                 </li>
                 <li class="menu-categories__item">
-                    <a class="menu-categories__link" href="/catalog=4">Персонажи мультфильмов</a>
+                    <a class="menu-categories__link" href="/catalog=5">Персонажи мультфильмов</a>
                 </li>
                 <li class="menu-categories__item">
                     <a class="menu-categories__link" href="/catalog=1">Мягкие аксессуары</a>

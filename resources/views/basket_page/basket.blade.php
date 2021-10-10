@@ -5,9 +5,10 @@
     <div class="container">
         <div class="basket-wrapper">
             <div class="basket__product-inner">
-
-                @include('basket_page.card')
-
+                @if($var == true)
+                    @include('basket_page.card')
+                @else
+                @endif
             </div>
             <div class="product-inner__buyblock">
                 <div class="tabs-wrapper buyblock-wrapper">
@@ -76,7 +77,13 @@
                         </div>
                         <div class="result-price__wrapper">
                             <p class="result-price__title">Итого</p>
-                            <p class="result-price__title-price">{{ $order->getFullPrice() == null ? 0 : $order->getFullPrice() }} ₽</p>
+                            <p class="result-price__title-price">
+                                @if($var == true)
+                                    {{ $order->getFullPrice() }} ₽
+                                @else
+                                    0 ₽
+                                @endif
+                                </p>
                         </div>
                             @csrf
                         <div class="result-price__button">

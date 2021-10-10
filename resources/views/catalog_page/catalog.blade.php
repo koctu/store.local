@@ -19,7 +19,7 @@
     <section class="catalog">
         <div class="container">
             <h2 class="catalog__title">
-                Мягкие игрушки
+                {{ $category->name }}
             </h2>
             <div class="catalog__filter">
                 <div class="catalog__filter-itemsinner">

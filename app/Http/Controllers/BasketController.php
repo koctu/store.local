@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 
 class BasketController extends Controller
 {
-    public function basket(Request $request){
+        public function basket(){
         $orderId = session('orderId');
         if (!is_null($orderId)){
-            $order = Order::findOrFail($orderId);
+            $order = Order::find($orderId);
+            $var = true;
+            return view('basket_page.basket', compact('order', 'var'));
+        }
+        else{
+            $var = false;
+            return view('basket_page.basket', compact('var'));
         }
 
-        if (is_null($order)){
-            return view('basket_page.basket');
-        }
-        else {
-            return view('basket_page.basket', compact('order'));
-        }
     }
 
     public function basketAdd($productId){
@@ -89,7 +89,7 @@ class BasketController extends Controller
         $success = $order->saveOrder($request->shop, $request->payment);
         session()->invalidate();
         session()->regenerate();
-        return redirect()->route('direct_index');
+        return redirect()->route('getCardStPage');
     }
 
 }
